@@ -1,7 +1,6 @@
 package com.example.magnus.galgeleg_magnus;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +11,7 @@ import android.widget.TextView;
 
 public class GameActivity extends AppCompatActivity implements View.OnClickListener {
     private Galgelogik galgelogik = new Galgelogik();
+    private Button a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,æ,ø,å;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,62 +19,63 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_game);
 
         galgelogik.nulstil();
-        Button aButton = (Button) findViewById(R.id.aButton);
-        aButton.setOnClickListener(this);
-        Button bButton = (Button) findViewById(R.id.bButton);
-        bButton.setOnClickListener(this);
-        Button cButton = (Button) findViewById(R.id.cButton);
-        cButton.setOnClickListener(this);
-        Button dButton = (Button) findViewById(R.id.dButton);
-        dButton.setOnClickListener(this);
-        Button eButton = (Button) findViewById(R.id.eButton);
-        eButton.setOnClickListener(this);
-        Button fButton = (Button) findViewById(R.id.fButton);
-        fButton.setOnClickListener(this);
-        Button gButton = (Button) findViewById(R.id.gButton);
-        gButton.setOnClickListener(this);
-        Button hButton = (Button) findViewById(R.id.hButton);
-        hButton.setOnClickListener(this);
-        Button iButton = (Button) findViewById(R.id.iButton);
-        iButton.setOnClickListener(this);
-        Button jButton = (Button) findViewById(R.id.jButton);
-        jButton.setOnClickListener(this);
-        Button kButton = (Button) findViewById(R.id.kButton);
-        kButton.setOnClickListener(this);
-        Button lButton = (Button) findViewById(R.id.lButton);
-        lButton.setOnClickListener(this);
-        Button mButton = (Button) findViewById(R.id.mButton);
-        mButton.setOnClickListener(this);
-        Button nButton = (Button) findViewById(R.id.nButton);
-        nButton.setOnClickListener(this);
-        Button oButton = (Button) findViewById(R.id.oButton);
-        oButton.setOnClickListener(this);
-        Button pButton = (Button) findViewById(R.id.pButton);
-        pButton.setOnClickListener(this);
-        Button qButton = (Button) findViewById(R.id.qButton);
-        qButton.setOnClickListener(this);
-        Button rButton = (Button) findViewById(R.id.rButton);
-        rButton.setOnClickListener(this);
-        Button sButton = (Button) findViewById(R.id.sButton);
-        sButton.setOnClickListener(this);
-        Button tButton = (Button) findViewById(R.id.tButton);
-        tButton.setOnClickListener(this);
-        Button uButton = (Button) findViewById(R.id.uButton);
-        uButton.setOnClickListener(this);
-        Button vButton = (Button) findViewById(R.id.vButton);
-        vButton.setOnClickListener(this);
-        Button xButton = (Button) findViewById(R.id.xButton);
-        xButton.setOnClickListener(this);
-        Button yButton = (Button) findViewById(R.id.yButton);
-        yButton.setOnClickListener(this);
-        Button zButton = (Button) findViewById(R.id.zButton);
-        zButton.setOnClickListener(this);
-        Button æButton = (Button) findViewById(R.id.æButton);
-        æButton.setOnClickListener(this);
-        Button øButton = (Button) findViewById(R.id.øButton);
-        øButton.setOnClickListener(this);
-        Button åButton = (Button) findViewById(R.id.åButton);
-        åButton.setOnClickListener(this);
+
+        a = (Button) findViewById(R.id.aButton);
+        a.setOnClickListener(this);
+        b = (Button) findViewById(R.id.bButton);
+        b.setOnClickListener(this);
+        c = (Button) findViewById(R.id.cButton);
+        c.setOnClickListener(this);
+        d= (Button) findViewById(R.id.dButton);
+        d.setOnClickListener(this);
+        e = (Button) findViewById(R.id.eButton);
+        e.setOnClickListener(this);
+        f = (Button) findViewById(R.id.fButton);
+        f.setOnClickListener(this);
+        g = (Button) findViewById(R.id.gButton);
+        g.setOnClickListener(this);
+        h = (Button) findViewById(R.id.hButton);
+        h.setOnClickListener(this);
+        i = (Button) findViewById(R.id.iButton);
+        i.setOnClickListener(this);
+        j = (Button) findViewById(R.id.jButton);
+        j.setOnClickListener(this);
+        k = (Button) findViewById(R.id.kButton);
+        k.setOnClickListener(this);
+        l = (Button) findViewById(R.id.lButton);
+        l.setOnClickListener(this);
+        m = (Button) findViewById(R.id.mButton);
+        m.setOnClickListener(this);
+        n = (Button) findViewById(R.id.nButton);
+        n.setOnClickListener(this);
+        o = (Button) findViewById(R.id.oButton);
+        o.setOnClickListener(this);
+        p = (Button) findViewById(R.id.pButton);
+        p.setOnClickListener(this);
+        q = (Button) findViewById(R.id.qButton);
+        q.setOnClickListener(this);
+        r = (Button) findViewById(R.id.rButton);
+        r.setOnClickListener(this);
+        s = (Button) findViewById(R.id.sButton);
+        s.setOnClickListener(this);
+        t = (Button) findViewById(R.id.tButton);
+        t.setOnClickListener(this);
+        u = (Button) findViewById(R.id.uButton);
+        u.setOnClickListener(this);
+        v = (Button) findViewById(R.id.vButton);
+        v.setOnClickListener(this);
+        x = (Button) findViewById(R.id.xButton);
+        x.setOnClickListener(this);
+        y = (Button) findViewById(R.id.yButton);
+        y.setOnClickListener(this);
+        z = (Button) findViewById(R.id.zButton);
+        z.setOnClickListener(this);
+        æ = (Button) findViewById(R.id.æButton);
+        æ.setOnClickListener(this);
+        ø = (Button) findViewById(R.id.øButton);
+        ø.setOnClickListener(this);
+        å = (Button) findViewById(R.id.åButton);
+        å.setOnClickListener(this);
 
         TextView visibleWord = (TextView) findViewById(R.id.visibleWord);
         visibleWord.setText(galgelogik.getSynligtOrd());
@@ -82,234 +83,155 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        String letter = null;
         Button button = null;
         switch (view.getId()) {
             case R.id.aButton :
-                letter = "a";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("a");
                 button = (Button) findViewById(R.id.aButton);
                 button.setEnabled(false);
                 break;
             case R.id.bButton :
-                letter = "b";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("b");
                 button = (Button) findViewById(R.id.bButton);
                 button.setEnabled(false);
                 break;
             case R.id.cButton :
-                letter = "c";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("c");
                 button = (Button) findViewById(R.id.cButton);
                 button.setEnabled(false);
                 break;
             case R.id.dButton :
-                letter = "d";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("d");
                 button = (Button) findViewById(R.id.dButton);
                 button.setEnabled(false);
                 break;
             case R.id.eButton :
-                letter = "e";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("e");
                 button = (Button) findViewById(R.id.eButton);
                 button.setEnabled(false);
                 break;
             case R.id.fButton :
-                letter = "f";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("f");
                 button = (Button) findViewById(R.id.fButton);
                 button.setEnabled(false);
                 break;
             case R.id.gButton :
-                letter = "g";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("g");
                 button = (Button) findViewById(R.id.gButton);
                 button.setEnabled(false);
                 break;
             case R.id.hButton :
-                letter = "h";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("h");
                 button = (Button) findViewById(R.id.hButton);
                 button.setEnabled(false);
                 break;
             case R.id.iButton :
-                letter = "i";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("i");
                 button = (Button) findViewById(R.id.iButton);
                 button.setEnabled(false);
                 break;
             case R.id.jButton :
-                letter = "j";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("j");
                 button = (Button) findViewById(R.id.jButton);
                 button.setEnabled(false);
                 break;
             case R.id.kButton :
-                letter = "k";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("k");
                 button = (Button) findViewById(R.id.kButton);
                 button.setEnabled(false);
                 break;
             case R.id.lButton :
-                letter = "l";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("l");
                 button = (Button) findViewById(R.id.lButton);
                 button.setEnabled(false);
                 break;
             case R.id.mButton :
-                letter = "m";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("m");
                 button = (Button) findViewById(R.id.mButton);
                 button.setEnabled(false);
                 break;
             case R.id.nButton :
-                letter = "n";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("n");
                 button = (Button) findViewById(R.id.nButton);
                 button.setEnabled(false);
                 break;
             case R.id.oButton :
-                letter = "o";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("o");
                 button = (Button) findViewById(R.id.oButton);
                 button.setEnabled(false);
                 break;
             case R.id.pButton :
-                letter = "p";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("p");
                 button = (Button) findViewById(R.id.pButton);
                 button.setEnabled(false);
                 break;
             case R.id.qButton :
-                letter = "q";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("q");
                 button = (Button) findViewById(R.id.qButton);
                 button.setEnabled(false);
                 break;
             case R.id.rButton :
-                letter = "r";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("r");
                 button = (Button) findViewById(R.id.rButton);
                 button.setEnabled(false);
                 break;
             case R.id.sButton :
-                letter = "s";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("s");
                 button = (Button) findViewById(R.id.sButton);
                 button.setEnabled(false);
                 break;
             case R.id.tButton :
-                letter = "t";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("t");
                 button = (Button) findViewById(R.id.tButton);
                 button.setEnabled(false);
                 break;
             case R.id.uButton :
-                letter = "u";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("u");
                 button = (Button) findViewById(R.id.uButton);
                 button.setEnabled(false);
                 break;
             case R.id.vButton :
-                letter = "v";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("v");
                 button = (Button) findViewById(R.id.vButton);
                 button.setEnabled(false);
                 break;
             case R.id.xButton :
-                letter = "x";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("x");
                 button = (Button) findViewById(R.id.xButton);
                 button.setEnabled(false);
                 break;
             case R.id.yButton :
-                letter = "y";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("y");
                 button = (Button) findViewById(R.id.yButton);
                 button.setEnabled(false);
                 break;
             case R.id.zButton :
-                letter = "z";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("z");
                 button = (Button) findViewById(R.id.zButton);
                 button.setEnabled(false);
                 break;
             case R.id.æButton :
-                letter = "æ";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("æ");
                 button = (Button) findViewById(R.id.æButton);
                 button.setEnabled(false);
                 break;
             case R.id.øButton :
-                letter = "ø";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("ø");
                 button = (Button) findViewById(R.id.øButton);
                 button.setEnabled(false);
                 break;
             case R.id.åButton :
-                letter = "å";
-                galgelogik.gætBogstav(letter);
-                updateUI(letter);
-                showClickedOnLetterDialog(letter);
+                letterClicked("å");
                 button = (Button) findViewById(R.id.åButton);
                 button.setEnabled(false);
                 break;
         }
+    }
+
+    private void letterClicked (String letter) {
+        galgelogik.gætBogstav(letter);
+        updateUI(letter);
+        showClickedOnLetterDialog(letter);
     }
 
     private void updateUI (String letter) {
